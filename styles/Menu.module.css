@@ -1,0 +1,67 @@
+.menu {
+	display: flex;
+	flex-direction: column;
+	gap: 3rem;
+	margin-top: 6rem;
+}
+.heading {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	font-weight: bold;
+}
+.heading > :nth-child(1) {
+	font-size: 1rem;
+	color: var(--themeRed);
+	margin-bottom: 2rem;
+}
+.heading > :nth-child(2),
+.heading > :nth-child(3) {
+	font-size: 2rem;
+}
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	row-gap: 2rem;
+	align-items: center;
+	justify-content: space-around;
+}
+.pizza {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 0.5rem;
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+.pizza:hover {
+	cursor: pointer;
+}
+.ImageWrapper {
+	width: 20rem;
+	height: 20rem;
+	position: relative;
+	overflow: hidden;
+}
+.ImageWrapper > :nth-child(1) {
+	width: 100%;
+	height: 100%;
+}
+.ImageWrapper > :nth-child(1):hover {
+	transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .menu {
+        margin-top: 2rem; /* Reduce the top margin for smaller screens */
+    }
+
+    .heading {
+        font-size: 1.5rem; /* Increase font size for smaller screens */
+    }
+
+    .pizza {
+        font-size: 1rem; /* Reduce font size further for smaller screens */
+    }
+}

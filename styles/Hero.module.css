@@ -1,0 +1,143 @@
+/* Base styles for .hero */
+.hero {
+    display: flex;
+    flex-direction: column-reverse; /* Change to column on smaller screens */
+    align-items: center;
+    text-align: center;
+}
+
+/* Left side content */
+.leftSide {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center; /* Center align on smaller screens */
+    text-align: center;
+}
+
+.cherryDiv {
+    width: fit-content;
+    background-color: var(--pink);
+    margin-top: 3rem;
+    padding: 1rem;
+    border-radius: 2rem;
+    font-size: 0.8rem;
+    color: var(--themeRed);
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Right side content */
+.rightSide {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align on smaller screens */
+    position: relative;
+}
+
+.imageContainer {
+    width: 100%; /* Adjust image width for responsiveness */
+    max-width: 38rem; /* Limit maximum width */
+    height: auto; /* Allow height to adjust proportionally */
+}
+
+.contactUs {
+    width: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 6rem;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 1rem;
+    border-radius: 5rem;
+    gap: 1rem;
+    background-color: aliceblue;
+    box-shadow: var(--shadow);
+    color: var(--themeRed);
+}
+
+/* Adjust contactUs positioning for smaller screens */
+@media (max-width: 768px) {
+    .contactUs {
+        top: 2rem;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+.contactUs:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.contactUs .phone {
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(59, 208, 59);
+    color: aliceblue;
+    border-radius: 50%;
+}
+
+/* Pizza content */
+.pizza {
+    width: max-content;
+    display: flex;
+    gap: 1rem;
+    position: absolute;
+    bottom: 4rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: aliceblue;
+    box-shadow: var(--shadow);
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.pizza:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.pizzaImg {
+    width: 6rem;
+    height: 4rem;
+    overflow: hidden;
+    border-radius: 0.5rem;
+}
+
+.pizzaImg > :nth-child(1) {
+    width: 100%;
+    height: 100%;
+}
+
+/* Details styling */
+.details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .heroText {
+        font-size: 2.5rem; /* Adjust font size for smaller screens */
+    }
+
+    .miniText {
+        width: 90%; /* Adjust width for smaller screens */
+    }
+
+    .btn {
+        padding: 0.8rem 2rem; /* Adjust button padding for smaller screens */
+    }
+
+    .rightSide {
+        text-align: center;
+    }
+}

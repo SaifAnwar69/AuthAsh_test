@@ -1,0 +1,125 @@
+/* Base styles for .orders */
+.orders {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem; /* Reduce gap for smaller screens */
+    margin-top: 2rem; /* Adjust top margin for smaller screens */
+    padding: 1rem; /* Add padding for better spacing on smaller screens */
+    max-width: 100%; /* Ensure it doesn't overflow on small screens */
+    width: 100%; /* Full width on small screens */
+}
+
+/* Heading styles */
+.heading {
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center; /* Center align text for smaller screens */
+}
+
+/* Details styles */
+.details {
+    display: flex;
+    flex-direction: column;
+    width: 80%; /* Adjust width for smaller screens */
+    gap: 1rem;
+    text-align: center; /* Center align text for smaller screens */
+}
+
+.details > div {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap for smaller screens */
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.details > div > span:nth-of-type(2) {
+    font-weight: 600;
+}
+
+/* Status Container styles */
+.statusContainer {
+    width: 100%; /* Adjust width for smaller screens */
+    max-width: 80%; /* Limit maximum width */
+    margin: 2rem auto; /* Center align and adjust margin */
+    display: flex;
+    flex-direction: column; /* Stack status items on smaller screens */
+    align-items: center; /* Center align items on smaller screens */
+    gap: 1rem;
+}
+
+/* Status styles */
+.status {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.5rem; /* Reduce font size for smaller screens */
+    color: var(--themeRed);
+    text-align: center; /* Center align text for smaller screens */
+}
+
+.status > :nth-child(2) {
+    font-size: 1rem; /* Reduce font size for smaller screens */
+    color: rgb(0, 0, 0);
+}
+
+/* Specific adjustments for peyOndel and completed classes */
+.peyOndel,
+.completed {
+    font-size: 1rem; /* Reduce font size for smaller screens */
+    padding: 5px 10px; /* Reduce padding for smaller screens */
+    border-radius: 5px; /* Reduce border radius for smaller screens */
+}
+
+/* Spinner adjustments */
+.spinner {
+    top: -20px; /* Adjust position for smaller screens */
+}
+
+/* Responsive adjustments for specific elements */
+@media (max-width: 768px) {
+    /* Further reduce gap between sections */
+    .orders {
+        gap: 1rem;
+    }
+
+    /* Further reduce top margin for the heading */
+    .heading {
+        font-size: 1.5rem;
+        margin-top: 1rem;
+    }
+
+    /* Adjust width for details on smaller screens */
+    .details {
+        width: 90%;
+    }
+
+    /* Stack items vertically within details */
+    .details > div {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    /* Adjust max width for the status container */
+    .statusContainer {
+        max-width: 90%;
+    }
+
+    /* Reduce font sizes and spacing for status elements on smaller screens */
+    .status {
+        font-size: 1.2rem;
+        gap: 0.5rem;
+    }
+
+    .status > :nth-child(2) {
+        font-size: 0.8rem;
+    }
+
+    /* Adjust position of the spinner for smaller screens */
+    .spinner {
+        top: -15px;
+    }
+}
