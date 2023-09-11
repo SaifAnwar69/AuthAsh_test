@@ -7,9 +7,9 @@ export default function Menu({ pizzas }) {
 	return (
 		<div className={styles.menu}>
 			<div className={styles.heading}>
-				<span>OUR MENU</span>
-				<span>Menu That Always</span>
-				<span>Make you Fall In pnq</span>
+				<span>THE MENU</span>
+				{/* <span>Menu That Always</span>
+				<span>Make you Fall In pnq</span> */}
 			</div>
 			{/* pizzas */}
 			<div className={styles.container}>

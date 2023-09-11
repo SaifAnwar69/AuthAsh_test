@@ -41,6 +41,10 @@ export default function Orders({ order }) {
             <span>{order.name}</span>
           </div>
           <div>
+            <span>Customer Address</span>
+            <span>{order.address}</span>
+          </div>
+          <div>
             <span>Phone</span>
             <span>{order.phone}</span>
           </div>
@@ -69,6 +73,7 @@ export default function Orders({ order }) {
           <div className={styles.status}>
             <Image src={Cooking} alt="Cooking" width={50} height={50} />
             <span>Processing</span>
+
             {order.status === 1 && (
               <div className={styles.spinner}>
                 <Image src={Spinner} alt="Spinner" width={120} height={120} />

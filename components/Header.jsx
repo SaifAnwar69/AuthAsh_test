@@ -18,15 +18,13 @@ export default function Header() {
 		<header className={styles.header}>
 			{/* logo side */}
 			<div className={styles.logo}>
-				<Image src={Logo} alt="Logo" width={50} height={50} />
-				<span>Autistic Ash</span>
+			<Link href="../"><Image src={Logo} alt="Logo" width={50} height={50} /></Link>
+				{/* <span>Autistic Ash</span> */}
 			</div>
 			{/* menu side */}
 			<nav className={styles.nav}>
 				<ul className={styles.menu}>
-					<li>
-						<Link href="../">Home</Link>
-					</li>
+					<li>AuthenticAsh</li>
 					{/* <li>Menu</li> */}
 					{/* <li>Contact</li> */}
 				</ul>

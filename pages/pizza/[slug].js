@@ -58,18 +58,18 @@ export default function Pizza({ pizza }) {
             {pizza.price[size] * quantity}
           </span>
           <div className={styles.size}>
-            <span>Size</span>
+            {/* <span>Size</span> */}
             <div className={styles.SizeVaraints}>
-              <div
+              {/* <div
                 className={size === 0 ? styles.selected : ""}
                 onClick={() => setSize(0)}>
-                Small
+                Queen
               </div>
               <div
                 className={size === 1 ? styles.selected : ""}
                 onClick={() => setSize(1)}>
-                Medium
-              </div>
+                King
+              </div> */}
               {/* <div
                 className={size === 2 ? styles.selected : ""}
                 onClick={() => setSize(2)}>
@@ -102,7 +102,7 @@ export default function Pizza({ pizza }) {
           </div>
           {/* button */}
           <button onClick={addToCart} className={`btn ${styles.btn}`}>
-            Add to Card
+            Add to Cart
           </button>
         </div>
         <Toaster />

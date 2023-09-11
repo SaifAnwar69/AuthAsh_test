@@ -10,10 +10,13 @@
 	justify-content: flex-start;
 	gap: 0.5rem;
 	flex: 1;
+	;
+	
 }
 .logo > span {
 	font-weight: bold;
 	font-size: 1.5rem;
+	border-radius: 1rem;
 }
 .nav {
 	flex: 1;
@@ -24,10 +27,14 @@
 	gap: 2rem;
 	justify-content: center;
 	z-index: 99;
+	font-weight: bold;
+	font-size: 1.5rem;
+	margin: 10px 0px;
 }
 .menu > li:hover {
 	cursor: pointer;
 	color: var(--themeRed);
+	
 }
 .rightSide {
 	flex: 1;
@@ -36,7 +43,7 @@
 	justify-content: flex-end;
 }
 .cart {
-	position: relative;
+	position: fixed;
 	display: flex;
 	cursor: pointer;
 	z-index: 99;
@@ -46,7 +53,7 @@
 	display: flex;
 	cursor: pointer;
 	z-index: 99;
-	margin: 0px 10px;
+	margin: 0px 50px;
 }
 .badge {
 	position: absolute;
@@ -60,3 +67,10 @@
 	height: 20px;
 	border-radius: 50%;
 }
+
+.shopping-bag {
+	position: fixed; /* Keep it fixed when scrolling */
+	top: 100px; /* Adjust the initial top position as needed */
+	right: 20px; /* Adjust the initial right position as needed */
+	transition: top 0.3s; /* Add a smooth transition effect */
+  }

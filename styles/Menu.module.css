@@ -6,12 +6,12 @@
 }
 .heading {
 	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
+	flex: content;
+	justify-content: center;
 	font-weight: bold;
 }
 .heading > :nth-child(1) {
-	font-size: 1rem;
+	font-size: 3rem;
 	color: var(--themeRed);
 	margin-bottom: 2rem;
 }

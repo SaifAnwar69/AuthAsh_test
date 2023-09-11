@@ -9,11 +9,11 @@ export default function Services() {
 		<div className={styles.services}>
 			<div className={styles.heading}>
 				<span>WHAT WE SERVE</span>
-				<span>Your Favourite Paper</span>
-				<span>Delivery Partner</span>
+				{/* <span>Your Favourite Paper</span>
+				<span>Delivery Partner</span> */}
 			</div>
 			{/* features */}
-			<div className={styles.container}>
+			{/* <div className={styles.container}>
 				<div className={styles.feature}>
 					<div className={styles.imageWrapper}>
 						<Image src={Services1} alt="Services1" />
@@ -37,7 +37,7 @@ export default function Services() {
 					<span>Easy to Order</span>
 					<span>Not only fast for us, quality is also number one</span>
 				</div>
-			</div>
+			</div> */}
 		</div>
 	);
 }
